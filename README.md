@@ -57,34 +57,9 @@ HexBlade is built using robust OOP principles and design patterns to ensure main
 - Clear separation between game logic and UI layers
 
 ### Design Patterns Used
-
+- **Builder Pattern** - Flexible character construction with customizable equipment
 - **Factory Pattern** - Character and item creation
-- **Strategy Pattern** - Ability execution and combat calculations
-- **Observer Pattern** - UI updates responding to game state changes
 - **Singleton Pattern** - Game state and resource management
-
-### Code Organization
-
-```
-HexBlade/
-├── src/
-│   ├── characters/          # Character classes and base abstractions
-│   │   ├── Character.h      # Abstract base class
-│   │   ├── Character.cpp
-│   │   ├── Warrior.h
-│   │   ├── Warrior.cpp
-│   │   ├── Rogue.h
-│   │   ├── Rogue.cpp
-│   │   ├── Druid.h
-│   │   └── Druid.cpp
-│   ├── items/              # Item system
-│   ├── combat/             # Combat mechanics and turn management
-│   ├── ui/                 # Graphical interface components
-│   └── main.cpp            # Entry point
-├── assets/                 # Sprites and pixel art resources
-├── include/                # Header files
-└── CMakeLists.txt          # Build configuration
-```
 
 ## 🚀 Getting Started
 
@@ -149,3 +124,4 @@ This project is open source and available under the MIT License.
 ---
 
 **Enjoy the battle in HexBlade!** ⚔️✨
+
