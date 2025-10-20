@@ -5,6 +5,7 @@ A 2D pixel-art turn-based fighting game featuring magical fantasy combat between
 ![Game Type](https://img.shields.io/badge/Type-Turn--Based%20Fighter-blue)
 ![Players](https://img.shields.io/badge/Players-2-green)
 ![Style](https://img.shields.io/badge/Style-Pixel%20Art-purple)
+![Language](https://img.shields.io/badge/Language-C++-00599C?logo=cplusplus)
 
 ## 🎮 Game Overview
 
@@ -66,24 +67,32 @@ HexBlade is built using robust OOP principles and design patterns to ensure main
 
 ```
 HexBlade/
-├── characters/          # Character classes and base abstractions
-│   ├── Character.java   # Abstract base class
-│   ├── Warrior.java
-│   ├── Rogue.java
-│   └── Druid.java
-├── items/              # Item system
-├── combat/             # Combat mechanics and turn management
-├── ui/                 # Graphical interface components
-├── assets/             # Sprites and pixel art resources
-└── Main.java           # Entry point
+├── src/
+│   ├── characters/          # Character classes and base abstractions
+│   │   ├── Character.h      # Abstract base class
+│   │   ├── Character.cpp
+│   │   ├── Warrior.h
+│   │   ├── Warrior.cpp
+│   │   ├── Rogue.h
+│   │   ├── Rogue.cpp
+│   │   ├── Druid.h
+│   │   └── Druid.cpp
+│   ├── items/              # Item system
+│   ├── combat/             # Combat mechanics and turn management
+│   ├── ui/                 # Graphical interface components
+│   └── main.cpp            # Entry point
+├── assets/                 # Sprites and pixel art resources
+├── include/                # Header files
+└── CMakeLists.txt          # Build configuration
 ```
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-- Java JDK 11 or higher
-- JavaFX (for graphical interface)
+- C++ compiler (GCC 9+ or Clang 10+)
+- CMake 3.15 or higher
+- SDL2 or SFML (for graphics rendering)
 
 ### Installation & Running
 
@@ -93,10 +102,12 @@ git clone https://github.com/yourusername/HexBlade.git
 cd HexBlade
 ```
 
-2. Compile and run:
+2. Build and run:
 ```bash
-javac Main.java
-java Main
+mkdir build && cd build
+cmake ..
+make
+./HexBlade
 ```
 
 ## 🎯 How to Play
