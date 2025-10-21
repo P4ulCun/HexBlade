@@ -68,8 +68,7 @@ HexBlade is built using robust OOP principles and design patterns to ensure main
 - C++ compiler (GCC 9+ or Clang 10+)
 - CMake 3.15 or higher
 - SDL2 or SFML (for graphics rendering)
-
-### Installation & Running
+<!---### Installation & Running
 
 1. Clone the repository:
 ```bash
@@ -83,7 +82,7 @@ mkdir build && cd build
 cmake ..
 make
 ./HexBlade
-```
+``` --->
 
 ## 🎯 How to Play
 
@@ -98,16 +97,7 @@ make
 - **Clean Architecture** - Separation of concerns between game logic, data, and presentation
 - **SOLID Principles** - Adherence to industry-standard design principles
 - **Extensibility** - Easy to add new characters, abilities, and items
-- **Maintainability** - Well-documented code with clear class responsibilities
-
-## 🔮 Future Enhancements
-
-- [ ] Additional character classes
-- [ ] More diverse item types
-- [ ] Special combo abilities
-- [ ] Tournament mode
-- [ ] Enhanced visual effects
-- [ ] Sound effects and music
+- **Maintainability** - Clear class responsibilities
 
 ## 👥 Contributing
 
@@ -119,9 +109,10 @@ This project is open source and available under the MIT License.
 
 ## 👨‍💻 Authors
 
-*Add your name(s) here*
+Paul Cuntan
 
 ---
 
 **Enjoy the battle in HexBlade!** ⚔️✨
+
 
